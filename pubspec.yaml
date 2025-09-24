@@ -1,7 +1,7 @@
 name: calcolapizza
 description: Le esatte dosi per i tuoi impasti in pochi secondi
 
-version: 1.1.0+9
+version: 1.2.0+9
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
