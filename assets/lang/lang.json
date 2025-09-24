@@ -4,328 +4,422 @@
         "it": "Numero panielli",
         "pt": "Número de bolas de massa",
         "de": "Anzahl Teiglinge",
-        "es": "Número de bolas de masa"
+        "es": "Número de bolas de masa",
+        "ca": "Nombre de boles de massa",
+        "fr": "Nombre de pâtons"
     },
     "doughBallsWeight": {
         "en": "Dough balls weight (grams)",
         "it": "Peso panielli (grammi)",
         "pt": "Peso das bolas de massa (gramas)",
         "de": "Gewicht Teigling (Gramm)",
-        "es": "Peso de cada bola de masa (gramos)"
+        "es": "Peso de cada bola de masa (gramos)",
+        "ca": "Pes de les boles de massa (grams)",
+        "fr": "Poids des pâtons (grammes)"
     },
     "doughHydration": {
         "en": "Hydration",
         "it": "Idratazione",
         "pt": "Hidratação",
         "de": "Wasseranteil",
-        "es": "Hidratación"
+        "es": "Hidratación",
+        "ca": "Hidratació",
+        "fr": "Hydratation"
     },
     "saltPerLiter": {
         "en": "Salt",
         "it": "Sale",
         "pt": "Sal",
         "de": "Salz",
-        "es": "Sal"
+        "es": "Sal",
+        "ca": "Sal",
+        "fr": "Sel"
     },
     "fatsPerLiter": {
         "en": "Oil/lard/butter",
         "it": "Olio/strutto/burro",
         "pt": "Óleo/banha/manteiga",
         "de": "Öl/Fett/Butter",
-        "es": "Aceite/Mantequilla"
+        "es": "Aceite/Mantequilla",
+        "ca": "Oli/llard/mantega",
+        "fr": "Huile/saindoux/beurre"
     },
     "roomTemperature": {
         "en": "Room temperature",
         "it": "Temperatura ambiente",
         "pt": "Temperatura ambiente",
         "de": "Umgebungstemperatur",
-        "es": "Temperatura ambiente"
+        "es": "Temperatura ambiente",
+        "ca": "Temperatura ambient",
+        "fr": "Température ambiante"
     },
     "risingTime": {
         "en": "Rising time",
         "it": "Ore di lievitazione",
         "pt": "Tempo de fermentação",
         "de": "Gehzeit",
-        "es": "Tiempo de fermentación"
+        "es": "Tiempo de fermentación",
+        "ca": "Temps de fermentació",
+        "fr": "Temps de levée"
     },
     "fridgeRisingTime": {
         "en": "Fridge rising time",
         "it": "Ore in frigo",
         "pt": "Tempo na geladeira",
         "de": "Zeit im Kühlschrank",
-        "es": "Tiempo de refrigeración"
+        "es": "Tiempo de refrigeración",
+        "ca": "Temps de fermentació a la nevera",
+        "fr": "Temps de levée au réfrigérateur"
     },
     "grandmaPizza": {
         "en": "Grandma pizza",
         "it": "Pizza in teglia",
         "pt": "Pizza de forno",
         "de": "Pizza im Backblech",
-        "es": "Pizza rectangular"
+        "es": "Pizza rectangular",
+        "ca": "Pizza de safata",
+        "fr": "Pizza à la plaque"
     },
     "grandmaPizzaHint": {
         "en": "Only enable if you're going to make a rectangular pizza",
         "it": "Lascia disabilitato se vuoi fare la classica pizza tonda",
         "pt": "Desative se você fará a clássica pizza redonda",
         "de": "Nur einschalten wenn man eine eckige Pizza macht",
-        "es": "Active solo si hará una pizza rectangular"
+        "es": "Active solo si hará una pizza rectangular",
+        "ca": "Activa-ho només si faràs una pizza rectangular",
+        "fr": "Activez seulement si vous préparez une pizza rectangulaire"
     },
     "calculateRecipe": {
         "en": "Calculate recipe",
         "it": "Calcola dosi",
         "pt": "Calcular receita",
         "de": "Berechne",
-        "es": "Calcular receta"
+        "es": "Calcular receta",
+        "ca": "Calcula la recepta",
+        "fr": "Calculer la recette"
     },
     "invalidValue": {
         "en": "Error. Enter a positive number!",
         "it": "Errore. Inserisci un numero positivo!",
         "pt": "Erro. Insira um número positivo!",
         "de": "Fehler. Bitte positiven Wert eingeben!",
-        "es": "Error. Introduzca un número mayor a cero"
+        "es": "Error. Introduzca un número mayor a cero",
+        "ca": "Error. Introdueix un número positiu!",
+        "fr": "Erreur. Saisissez un nombre positif !"
     },
     "recipeTitle": {
         "en": "Here is your recipe!",
         "it": "Ecco la tua ricetta!",
         "pt": "Aqui está a sua receita!",
         "de": "Hier ist dein Rezept!",
-        "es": "Aquí está tu receta!"
+        "es": "Aquí está tu receta!",
+        "ca": "Aquí tens la teva recepta!",
+        "fr": "Voici votre recette !"
     },
     "doughBallSingular": {
         "en": "dough ball",
         "it": "paniello",
         "pt": "Bola de massa",
         "de": "Teigling",
-        "es": "Bola de masa"
+        "es": "Bola de masa",
+        "ca": "bola de massa",
+        "fr": "pâton"
     },
     "doughBallPlural": {
         "en": "dough balls",
         "it": "panielli",
         "pt": "Bolas de massa",
         "de": "Teiglinge",
-        "es": "Bolas de masa"
+        "es": "Bolas de masa",
+        "ca": "boles de massa",
+        "fr": "pâtons"
     },
     "flour": {
         "en": "Flour",
         "it": "Farina",
         "pt": "Farinha",
         "de": "Mehl",
-        "es": "Harina"
+        "es": "Harina",
+        "ca": "Farina",
+        "fr": "Farine"
     },
     "water": {
         "en": "Water",
         "it": "Acqua",
         "pt": "Água",
         "de": "Wasser",
-        "es": "Agua"
+        "es": "Agua",
+        "ca": "Aigua",
+        "fr": "Eau"
     },
     "yeast": {
         "en": "Yeast",
         "it": "Lievito",
         "pt": "Fermento",
         "de": "Hefe",
-        "es": "Levadura"
+        "es": "Levadura",
+        "ca": "Llevat",
+        "fr": "Levure"
     },
     "fresh": {
         "en": "fresh",
         "it": "fresco",
         "pt": "Fresco",
         "de": "frisch",
-        "es": "Fresco"
+        "es": "Fresco",
+        "ca": "fresc",
+        "fr": "fraîche"
     },
     "dry": {
         "en": "dry",
         "it": "secco",
         "pt": "Seco",
         "de": "trocken",
-        "es": "Seco"
+        "es": "Seco",
+        "ca": "sec",
+        "fr": "sèche"
     },
     "totalRisingTime": {
         "en": "Total rising time",
         "it": "Ore di lievitazione totali",
         "pt": "Tempo total de fermentação",
         "de": "Totale Gehzeit",
-        "es": "Tiempo total de fermentación"
+        "es": "Tiempo total de fermentación",
+        "ca": "Temps total de fermentació",
+        "fr": "Temps de levée total"
     },
     "yes": {
         "en": "Yes",
         "it": "Sì",
         "pt": "Sim",
         "de": "Ja",
-        "es": "Si"
+        "es": "Si",
+        "ca": "Sí",
+        "fr": "Oui"
     },
     "no": {
         "en": "No",
         "it": "No",
         "pt": "Não",
         "de": "Nein",
-        "es": "No"
+        "es": "No",
+        "ca": "No",
+        "fr": "Non"
     },
     "saveDialogTitle": {
         "en": "We are almost done!",
         "it": "Ci siamo quasi!",
         "pt": "Estamos quase lá!",
         "de": "Fast fertig!",
-        "es": "Ya casi terminamos!"
+        "es": "Ya casi terminamos!",
+        "ca": "Ja gairebé hem acabat!",
+        "fr": "On y est presque !"
     },
     "saveDialogTextfieldHint": {
         "en": "Dough name",
         "it": "Nome impasto",
         "pt": "Nome da massa",
         "de": "Bezeichnung Rezept",
-        "es": "Nombre de la masa"
+        "es": "Nombre de la masa",
+        "ca": "Nom de la massa",
+        "fr": "Nom de la pâte"
     },
     "requiredField": {
         "en": "Required field",
         "it": "Campo obbligatorio",
         "pt": "Campo obrigatório",
         "de": "Pflichtfeld",
-        "es": "Campo obligatorio"
+        "es": "Campo obligatorio",
+        "ca": "Camp obligatori",
+        "fr": "Champ obligatoire"
     },
     "save": {
         "en": "Save",
         "it": "Salva",
         "pt": "Salvar",
         "de": "Speichern",
-        "es": "Guardar"
+        "es": "Guardar",
+        "ca": "Desa",
+        "fr": "Enregistrer"
     },
     "saveDialogSuccess": {
         "en": "Dough recipe saved",
         "it": "Impasto salvato correttamente",
         "pt": "Receita de massa salva",
         "de": "Rezept gespeichert",
-        "es": "Receta guardada correctamente!"
+        "es": "Receta guardada correctamente!",
+        "ca": "Recepta de massa desada",
+        "fr": "Recette de pâte enregistrée"
     },
     "deleteDialogTitle": {
         "en": "Are you sure?",
         "it": "Sei sicuro?",
         "pt": "Tem certeza?",
         "de": "Sind sie sicher?",
-        "es": "¿Estás seguro?"
+        "es": "¿Estás seguro?",
+        "ca": "N'estàs segur?",
+        "fr": "Êtes-vous sûr ?"
     },
     "deleteDialogMessage": {
         "en": "The saved dough recipe will be deleted.",
         "it": "Questa operazione cancellerà l'impasto salvato.",
         "pt": "A receita de massa será excluída",
         "de": "Das gespeicherte Rezept wird gelöscht.",
-        "es": "La receta será eliminada."
+        "es": "La receta será eliminada.",
+        "ca": "La recepta de massa desada s'eliminarà.",
+        "fr": "La recette de pâte enregistrée sera supprimée."
     },
     "cancel": {
         "en": "Cancel",
         "it": "Annulla",
         "pt": "Cancelar",
         "de": "Abbrechen",
-        "es": "Cancelar"
+        "es": "Cancelar",
+        "ca": "Cancel·la",
+        "fr": "Annuler"
     },
     "ok": {
         "en": "Ok",
         "it": "Ok",
         "pt": "Ok",
         "de": "OK",
-        "es": "Ok"
+        "es": "Ok",
+        "ca": "D'acord",
+        "fr": "Ok"
     },
     "deleteDialogSuccess": {
         "en": "Dough deleted",
         "it": "Impasto eliminato correttamente",
         "pt": "Massa excluída",
         "de": "Rezept gelöscht",
-        "es": "Receta eliminada correctamente"
+        "es": "Receta eliminada correctamente",
+        "ca": "Massa eliminada",
+        "fr": "Pâte supprimée"
     },
     "savedDoughsTab": {
         "en": "Saved doughs",
         "it": "Impasti salvati",
         "pt": "Massa salva",
         "de": "Gespeicherte Rezepte",
-        "es": "Recetas guardadas"
+        "es": "Recetas guardadas",
+        "ca": "Masses desades",
+        "fr": "Pâtes enregistrées"
     },
     "noDoughsSaved": {
         "en": "No doughs saved",
         "it": "Nessun impasto salvato",
         "pt": "Nenhuma massa salva",
         "de": "Kein Rezept gespeichert",
-        "es": "No hay recetas guardadas"
+        "es": "No hay recetas guardadas",
+        "ca": "No hi ha masses desades",
+        "fr": "Aucune pâte enregistrée"
     },
     "aboutTab": {
         "en": "About",
         "it": "Info",
         "pt": "Sobre",
         "de": "Info",
-        "es": "Info"
+        "es": "Info",
+        "ca": "Informació",
+        "fr": "À propos"
     },
     "aboutTabDescription1": {
         "en": "Calcolapizza will allow you to calculate the exact amount for your pizza doughs in a few seconds and to save it for future use. This is a smartphone version of the homonymous tool by the forum",
         "it": "Calcolapizza vi permetterà di calcolare in pochissimi secondi le dosi esatte per i vostri impasti e salvarle per poterle riutilizzare in seguito. Questa non è altro che una versione riadattata per smartphone dell'omonimo strumento ufficiale del forum",
         "pt": "Calcolapizza lhe permitirá calcular a quantidade exata para a sua massa de pizza em alguns segundos e salvá-la para uso futuro. Esta é a versão para smartphone da ferramenta homônima do fórum",
         "de": "Calcolapizza ermöglicht das genaue errechnen der Zutaten für einen perfekten Pizzateig und ihn für später zu speichern. Dies ist die Smartphone Version des gleichnamigen Tool aus dem Forum.",
-        "es": "Calcolapizza te permitirá calcular la cantidad exacta de los ingredientes para tus masas de pizza en unos pocos segundos y te permitirá guardar la receta para utilizarlo cuando necesites. Esta app es una versión para smartphones basada en la herramienta del foro"
+        "es": "Calcolapizza te permitirá calcular la cantidad exacta de los ingredientes para tus masas de pizza en unos pocos segundos y te permitirá guardar la receta para utilizarlo cuando necesites. Esta app es una versión para smartphones basada en la herramienta del foro",
+        "ca": "Calcolapizza et permetrà calcular en pocs segons la quantitat exacta per a les teves masses de pizza i desar-la per a ús futur. Aquesta és la versió per a mòbils de l'eina homònima del fòrum",
+        "fr": "Calcolapizza vous permet de calculer en quelques secondes la quantité exacte pour vos pâtes à pizza et de l'enregistrer pour un usage futur. Il s'agit de la version mobile de l'outil homonyme du forum"
     },
     "aboutTabDescription2": {
         "en": "all the credit goes to them",
         "it": "ogni merito va a loro",
         "pt": "todos os créditos vão para",
         "de": "Ermöglicht dank ihnen",
-        "es": "Los créditos son para ellos"
+        "es": "Los créditos son para ellos",
+        "ca": "tots els mèrits són per a ells",
+        "fr": "tout le mérite leur revient"
     },
     "aboutTabDescription3": {
         "en": "This is an ad supported app, read the",
         "it": "L'app è supportata da ads, leggi la",
         "pt": "Este app possui anúncios, leia",
         "de": "Diese App wird durch Werbung unterstützt,",
-        "es": "Esta app tiene anuncios, puedes leer las"
+        "es": "Esta app tiene anuncios, puedes leer las",
+        "ca": "Aquesta aplicació es finança amb anuncis, llegeix la",
+        "fr": "Cette application est financée par la publicité, lisez la"
     },
     "privacyPolicy": {
         "en": "Privacy Policy",
         "it": "Normativa sulla privacy",
         "pt": "Política de privacidade",
         "de": "bitte lese die Datenschutzerklärung",
-        "es": "Políticas de Privacidad"
+        "es": "Políticas de Privacidad",
+        "ca": "Política de privadesa",
+        "fr": "Politique de confidentialité"
     },
     "appInfo": {
         "en": "App info",
         "it": "Info sull'app",
         "pt": "Informações sobre o app",
         "de": "App Info",
-        "es": "Información sobre la app"
+        "es": "Información sobre la app",
+        "ca": "Informació de l'app",
+        "fr": "Infos sur l'application"
     },
     "version": {
         "en": "Version",
         "it": "Versione",
         "pt": "Versão",
         "de": "Version",
-        "es": "Versión"
+        "es": "Versión",
+        "ca": "Versió",
+        "fr": "Version"
     },
     "author": {
         "en": "Author",
         "it": "Autore",
         "pt": "Autor",
         "de": "Author",
-        "es": "Autor"
+        "es": "Autor",
+        "ca": "Autor",
+        "fr": "Auteur"
     },
     "contactMe": {
         "en": "Contact me",
         "it": "Contattami",
         "pt": "Contato",
         "de": "Kontakt",
-        "es": "Contacto"
+        "es": "Contacto",
+        "ca": "Contacta'm",
+        "fr": "Contactez-moi"
     },
     "settingsTitle": {
         "en": "Settings",
         "it": "Impostazioni",
         "pt": "Configurações",
         "de": "Konfiguration",
-        "es": "Ajustes"
+        "es": "Ajustes",
+        "ca": "Configuració",
+        "fr": "Paramètres"
     },
     "darkMode": {
         "en": "Dark Mode",
         "it": "Tema scuro",
         "pt": "Tema escuro",
         "de": "Dunkles Design",
-        "es": "Modo Oscuro"
+        "es": "Modo Oscuro",
+        "ca": "Mode fosc",
+        "fr": "Mode sombre"
     },
     "useFahrenheit": {
         "en": "Use Fahrenheit degrees",
         "it": "Usa gradi Fahrenheit",
         "pt": "Use graus Fahrenheit",
         "de": "Fahrenheit verwenden",
-        "es": "Utilizar grados fahrenheit"
+        "es": "Utilizar grados fahrenheit",
+        "ca": "Utilitza graus Fahrenheit",
+        "fr": "Utiliser les degrés Fahrenheit"
     }
 }

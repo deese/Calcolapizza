@@ -51,12 +51,14 @@ class Calcolapizza extends StatelessWidget {
           title: "Calcolapizza",
           theme: settingsProvider.getTheme(box),
           home: Homepage(),
-          supportedLocales: [
+          supportedLocales: const [
             Locale("en", "US"),
             Locale("it", "IT"),
             Locale("pt", "PT"),
             Locale("de", "DE"),
-	    Locale("es", "ES"),
+            Locale("es", "ES"),
+            Locale("ca", "ES"),
+            Locale("fr", "FR"),
           ],
           localizationsDelegates: [
             AppLocalizations.delegate,
