@@ -34,7 +34,7 @@ class AboutPage extends StatelessWidget {
                 RichText(
                   text: TextSpan(
                       style: TextStyle(
-                          color: Theme.of(context).textTheme.body1.color),
+                          color: Theme.of(context).textTheme.bodyLarge!.color),
                       text:
                           "${AppLocalizations.of(context).translate("aboutTabDescription1")} ",
                       children: <TextSpan>[
@@ -46,7 +46,7 @@ class AboutPage extends StatelessWidget {
                                   'https://www.laconfraternitadellapizza.net/');
                             },
                           style: TextStyle(
-                              color: Theme.of(context).accentColor,
+                              color: Theme.of(context).colorScheme.secondary,
                               fontWeight: FontWeight.w500),
                         ),
                         TextSpan(
@@ -64,7 +64,7 @@ class AboutPage extends StatelessWidget {
                                   'https://github.com/Nicuz/Calcolapizza/blob/master/privacy_policy.md');
                             },
                           style: TextStyle(
-                              color: Theme.of(context).accentColor,
+                              color: Theme.of(context).colorScheme.secondary,
                               fontWeight: FontWeight.w500),
                         ),
                         TextSpan(text: "."),
@@ -84,7 +84,7 @@ class AboutPage extends StatelessWidget {
                     ),
                     Divider(),
                     AboutTile(
-                      icon: Icon(FontAwesomeIcons.history),
+                      icon: const FaIcon(FontAwesomeIcons.history),
                       title: AppLocalizations.of(context).translate("version"),
                       subtitle: FutureBuilder(
                           future: AboutProvider.getAppVersion(),
@@ -96,31 +96,31 @@ class AboutPage extends StatelessWidget {
                     ),
                     SizedBox(height: 20),
                     AboutTile(
-                      icon: Icon(FontAwesomeIcons.solidUserCircle),
+                      icon: const FaIcon(FontAwesomeIcons.solidUserCircle),
                       title: AppLocalizations.of(context).translate("author"),
                       subtitle: Text("Domenico Majorana"),
                     ),
                     SizedBox(height: 20),
                     AboutTile(
-                      icon: Icon(FontAwesomeIcons.solidEnvelope),
+                      icon: const FaIcon(FontAwesomeIcons.solidEnvelope),
                       title:
                           AppLocalizations.of(context).translate("contactMe"),
                       subtitle: LaunchURL(
                         text: "nico.majorana@gmail.com",
                         textStyle: TextStyle(
-                            color: Theme.of(context).textTheme.body1.color),
+                            color: Theme.of(context).textTheme.bodyLarge!.color),
                         url:
                             "mailto:nico.majorana@gmail.com?subject=Calcolapizza%20Form",
                       ),
                     ),
                     SizedBox(height: 20),
                     AboutTile(
-                      icon: Icon(FontAwesomeIcons.github),
+                      icon: const FaIcon(FontAwesomeIcons.github),
                       title: "GitHub",
                       subtitle: LaunchURL(
                         text: "@Nicuz",
                         textStyle: TextStyle(
-                            color: Theme.of(context).textTheme.body1.color),
+                            color: Theme.of(context).textTheme.bodyLarge!.color),
                         url: "https://github.com/Nicuz",
                       ),
                     ),

@@ -1,7 +1,7 @@
 import 'package:calcolapizza/app_localizations.dart';
 import 'package:calcolapizza/database/database.dart';
 import 'package:calcolapizza/models/dough.dart';
-import 'package:flushbar/flushbar.dart';
+import 'package:another_flushbar/flushbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -29,7 +29,7 @@ class DoughDetailsProvider with ChangeNotifier {
             content: Text(
                 AppLocalizations.of(context).translate("deleteDialogMessage")),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                 child: Text(
                   AppLocalizations.of(context)
                       .translate("cancel")
@@ -39,7 +39,7 @@ class DoughDetailsProvider with ChangeNotifier {
                   Navigator.of(context).pop();
                 },
               ),
-              FlatButton(
+              TextButton(
                 child: Text(
                   AppLocalizations.of(context).translate("ok").toUpperCase(),
                 ),
@@ -83,13 +83,13 @@ class DoughDetailsProvider with ChangeNotifier {
                 decoration: InputDecoration(
                     hintText: AppLocalizations.of(context)
                         .translate("saveDialogTextfieldHint")),
-                validator: (input) => input.trim().isEmpty
+                validator: (input) => (input?.trim().isEmpty ?? true)
                     ? AppLocalizations.of(context).translate("requiredField")
                     : null,
               ),
             ),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                 child: Text(
                   AppLocalizations.of(context)
                       .translate("cancel")
@@ -99,12 +99,12 @@ class DoughDetailsProvider with ChangeNotifier {
                   Navigator.of(context).pop();
                 },
               ),
-              FlatButton(
+              TextButton(
                 child: Text(
                   AppLocalizations.of(context).translate("save").toUpperCase(),
                 ),
                 onPressed: () {
-                  if (_formKey.currentState.validate()) {
+                  if (_formKey.currentState!.validate()) {
                     dough.setDoughName = _doughName.text[0].toUpperCase() +
                         _doughName.text.substring(1);
                     Navigator.of(context).pop();
@@ -126,7 +126,7 @@ class DoughDetailsProvider with ChangeNotifier {
   void showFlushbar(BuildContext context, IconData icon, Color iconColor,
       String text, int duration, double bottomMargin) {
     Flushbar(
-      backgroundColor: Theme.of(context).accentColor,
+      backgroundColor: Theme.of(context).colorScheme.secondary,
       shouldIconPulse: false,
       icon: Icon(
         icon,

@@ -11,34 +11,34 @@ extension on int {
 }
 
 class Dough {
-  int _id;
-  String _doughName;
-  int _doughsNumber;
-  int _doughsWeight;
-  int _totalDoughWeight;
-  int _hydration;
-  double _flour;
-  double _water;
-  double _salt;
-  double _fats;
-  double _yeast;
-  int _roomTemp;
-  int _risingTime;
-  int _fridgeRisingTime;
-  int _isGrandmaPizza;
-  TempUnit tempUnit;
+  late int _id;
+  late String _doughName;
+  late int _doughsNumber;
+  late int _doughsWeight;
+  late int _totalDoughWeight;
+  late int _hydration;
+  late double _flour;
+  late double _water;
+  late double _salt;
+  late double _fats;
+  late double _yeast;
+  late int _roomTemp;
+  late int _risingTime;
+  late int _fridgeRisingTime;
+  late int _isGrandmaPizza;
+  late TempUnit tempUnit;
 
   Dough({
-    @required int doughsNumber,
-    @required int doughsWeight,
-    @required int hydration,
-    @required int saltPerLiter,
-    @required int fatsPerLiter,
-    @required int roomTemp,
-    @required int risingTime,
-    @required int fridgeRisingTime,
-    @required bool isGrandmaPizza,
-    @required TempUnit tempUnit,
+    required int doughsNumber,
+    required int doughsWeight,
+    required int hydration,
+    required int saltPerLiter,
+    required int fatsPerLiter,
+    required int roomTemp,
+    required int risingTime,
+    required int fridgeRisingTime,
+    required bool isGrandmaPizza,
+    required TempUnit tempUnit,
   }) {
     _doughsNumber = doughsNumber;
     _doughsWeight = doughsWeight;
@@ -105,7 +105,7 @@ class Dough {
   int get salt => _salt.round();
   set setDoughName(String name) => _doughName = name;
   int get water => _water.round();
-  double get yeast => num.parse(_yeast.toStringAsFixed(2));
+  double get yeast => double.parse(_yeast.toStringAsFixed(2));
 
   String shareString(BuildContext context) {
     final String _doughDescription = doughsNumber == 1

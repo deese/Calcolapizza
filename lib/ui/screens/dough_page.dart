@@ -1,13 +1,11 @@
 import 'package:calcolapizza/app_localizations.dart';
-import 'package:calcolapizza/facebook_ads.dart';
 import 'package:calcolapizza/models/dough.dart';
 import 'package:calcolapizza/providers/dough_provider.dart';
 import 'package:calcolapizza/ui/widgets/ingredient_dosage.dart';
-import 'package:facebook_audience_network/facebook_audience_network.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:provider/provider.dart';
-import 'package:share/share.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:calcolapizza/enums.dart';
 
 class DoughPage extends StatelessWidget {
@@ -15,9 +13,7 @@ class DoughPage extends StatelessWidget {
   final TempUnit _tempUnit;
   final Dough _dough;
 
-  DoughPage(this._doughPageMode, this._tempUnit, this._dough) {
-    FacebookAudienceNetwork.init(testingId: facebookTestingId);
-  }
+  DoughPage(this._doughPageMode, this._tempUnit, this._dough);
 
   @override
   Widget build(BuildContext context) {
@@ -143,20 +139,7 @@ class DoughPage extends StatelessWidget {
                                   : AppLocalizations.of(context)
                                       .translate("no"),
                             ),
-                            Visibility(
-                              visible: doughDetailsProvider.showAdsDivider,
-                              child: Divider(),
-                            ),
-                            FacebookBannerAd(
-                              placementId: facebookPlacementId,
-                              listener: (BannerAdResult result, dynamic value) {
-                                print("Banner Ad: $result --> $value");
-                                doughDetailsProvider.setShowAdsDivider =
-                                    result.toString() == "BannerAdResult.ERROR"
-                                        ? false
-                                        : true;
-                              },
-                            )
+                            // Facebook ads removed
                           ],
                         ),
                       ),

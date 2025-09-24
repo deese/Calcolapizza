@@ -1,6 +1,9 @@
 # Facebook Audience Network ID
 /lib/facebook_ads.dart
 
+.flutter-plugins-dependencies
+
+
 # Miscellaneous
 *.class
 *.log
@@ -37,6 +40,7 @@
 **/android/gradlew
 **/android/gradlew.bat
 **/android/key.properties
+**/android/app/release-key.jks
 **/android/local.properties
 **/android/**/GeneratedPluginRegistrant.java
 
@@ -72,3 +76,4 @@
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+

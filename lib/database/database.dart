@@ -12,7 +12,7 @@ class DBProvider {
 
   factory DBProvider() => _instance;
 
-  static Database _database;
+  static Database? _database;
   Future<Database> get database async {
     return _database ??= await initDB();
   }
@@ -55,7 +55,7 @@ class DBProvider {
   Future<int> getCount() async {
     Database db = await database;
     return Sqflite.firstIntValue(
-        await db.rawQuery("SELECT COUNT(*) FROM DOUGHS"));
+        await db.rawQuery("SELECT COUNT(*) FROM DOUGHS")) ?? 0;
   }
 
   Future<int> deleteDough(int id) async {

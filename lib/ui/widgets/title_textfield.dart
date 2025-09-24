@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class TitleTextField extends StatelessWidget {
-  final String title;
-  final TextEditingController fieldValue;
-  final String error;
+  final String? title;
+  final TextEditingController? fieldValue;
+  final String? error;
 
   TitleTextField({this.title, this.fieldValue, this.error});
 
@@ -12,7 +12,7 @@ class TitleTextField extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text(title),
+        Text(title ?? ''),
         Card(
           elevation: 0,
           shape:
@@ -26,14 +26,19 @@ class TitleTextField extends StatelessWidget {
               ),
               keyboardType: TextInputType.number,
               decoration: InputDecoration.collapsed(
-                hintText: this.title,
+                hintText: this.title ?? '',
               ),
               controller: this.fieldValue,
-              validator: (String input) => input.trim().isEmpty ||
-                      int.tryParse(input) == null ||
-                      int.tryParse(input) < 0
-                  ? this.error
-                  : null,
+              validator: (String? input) {
+                if (input == null || input.trim().isEmpty) {
+                  return this.error;
+                }
+                final parsed = int.tryParse(input);
+                if (parsed == null || parsed < 0) {
+                  return this.error;
+                }
+                return null;
+              },
             ),
           ),
         ),

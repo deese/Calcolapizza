@@ -42,7 +42,7 @@ class SettingsPage extends StatelessWidget {
                               SettingsProvider();
                           return Switch(
                             value: settingsProvider.getDarkModeStatus(box),
-                            activeColor: Theme.of(context).accentColor,
+                            activeColor: Theme.of(context).colorScheme.secondary,
                             onChanged: (bool isDark) {
                               settingsProvider.setTheme(box, isDark);
                             },
@@ -64,7 +64,7 @@ class SettingsPage extends StatelessWidget {
                               SettingsProvider();
                           return Switch(
                             value: settingsProvider.getTempMode(box),
-                            activeColor: Theme.of(context).accentColor,
+                            activeColor: Theme.of(context).colorScheme.secondary,
                             onChanged: (bool isFahrenheit) {
                               final CalcolapizzaProvider calcolapizzaProvider =
                                   Provider.of<CalcolapizzaProvider>(context,

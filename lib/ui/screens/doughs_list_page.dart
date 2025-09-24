@@ -4,7 +4,6 @@ import 'package:calcolapizza/models/dough.dart';
 import 'package:calcolapizza/providers/dough_provider.dart';
 import 'package:calcolapizza/ui/screens/dough_page.dart';
 import 'package:calcolapizza/ui/widgets/dough_card_detail.dart';
-import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
@@ -29,17 +28,17 @@ class DoughsListPage extends StatelessWidget {
       future: doughDetailsProvider.getDoughs(),
       builder: (BuildContext context, AsyncSnapshot<List> snapshot) {
         if (snapshot.hasData) {
-          return snapshot.data.isEmpty
+          return (snapshot.data?.isEmpty ?? true)
               ? Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Container(
                       height: MediaQuery.of(context).size.height * 0.5,
-                      child: FlareActor(
-                        "assets/images/no_data_pizza.flr",
-                        fit: BoxFit.cover,
-                        animation: "bounce",
+                      child: Icon(
+                        Icons.local_pizza,
+                        size: 100,
+                        color: Colors.grey,
                       ),
                     ),
                     Text(
@@ -56,9 +55,9 @@ class DoughsListPage extends StatelessWidget {
                     Expanded(
                       child: ListView.builder(
                         physics: BouncingScrollPhysics(),
-                        itemCount: snapshot.data.length,
+                        itemCount: snapshot.data?.length ?? 0,
                         itemBuilder: (BuildContext context, int index) {
-                          Dough item = Dough.fromMap(snapshot.data[index]);
+                          Dough item = Dough.fromMap(snapshot.data![index]);
                           return OpenContainer(
                             openColor: Colors.transparent,
                             openElevation: 0,
@@ -82,7 +81,7 @@ class DoughsListPage extends StatelessWidget {
                                         SizedBox(height: 20),
                                         DoughCardDetail(
                                           icon: FontAwesomeIcons.pizzaSlice,
-                                          iconColor: Colors.red[400],
+                                          iconColor: Colors.red.shade400,
                                           text: item.doughsNumber == 1
                                               ? "${item.doughsNumber} ${AppLocalizations.of(context).translate("doughBallSingular")}"
                                               : "${item.doughsNumber} ${AppLocalizations.of(context).translate("doughBallPlural")}",

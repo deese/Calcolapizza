@@ -8,8 +8,8 @@ class LaunchURL extends StatelessWidget {
   final TextStyle textStyle;
 
   LaunchURL(
-      {this.text,
-      this.url,
+      {required this.text,
+      required this.url,
       this.textStyle = const TextStyle(color: Colors.black)});
 
   @override

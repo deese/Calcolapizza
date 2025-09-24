@@ -5,12 +5,12 @@ class RoundedButton extends StatelessWidget {
   final Color color;
   final Color textColor;
   final double borderRadius;
-  final Function onPressed;
+  final VoidCallback? onPressed;
   final EdgeInsets padding;
 
-  RoundedButton(
-      {this.text,
-      this.color,
+  const RoundedButton(
+      {required this.text,
+      required this.color,
       this.textColor = Colors.white,
       this.borderRadius = 100,
       this.onPressed,
@@ -18,8 +18,13 @@ class RoundedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
-      color: this.color,
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: this.color,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(this.borderRadius)),
+      ),
+      onPressed: this.onPressed,
       child: Padding(
         padding: this.padding,
         child: Text(
@@ -29,9 +34,6 @@ class RoundedButton extends StatelessWidget {
           ),
         ),
       ),
-      shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(this.borderRadius)),
-      onPressed: this.onPressed,
     );
   }
 }

@@ -5,9 +5,9 @@ import 'package:provider/provider.dart';
 
 extension on _TitleSliderState {
   void updateProviderValue(
-      {@required CalcolapizzaProvider provider,
-      @required double value,
-      @required SliderType sliderType}) {
+      {required CalcolapizzaProvider provider,
+      required double value,
+      required SliderType sliderType}) {
     switch (sliderType) {
       case SliderType.hydration:
         provider.setSelectedHydration(value, shouldNotify: false);
@@ -35,20 +35,20 @@ class TitleSlider extends StatefulWidget {
   @override
   _TitleSliderState createState() => _TitleSliderState();
 
-  final String title;
+  final String? title;
   final String unit;
   double min;
   double max;
   int value;
-  SliderType sliderType;
-  final Function onChanged;
+  SliderType? sliderType;
+  final Function? onChanged;
 
   TitleSlider({
     this.title,
     this.unit = "",
-    @required this.min,
-    @required this.max,
-    @required this.value,
+    required this.min,
+    required this.max,
+    required this.value,
     this.sliderType,
     this.onChanged,
   });
@@ -63,7 +63,7 @@ class _TitleSliderState extends State<TitleSlider> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text(widget.title),
+        Text(widget.title ?? ''),
         Card(
           elevation: 0,
           shape:
@@ -92,7 +92,11 @@ class _TitleSliderState extends State<TitleSlider> {
                   min: widget.min,
                   max: widget.max,
                   value: widget.value.toDouble(),
-                  onChanged: widget.onChanged,
+                  onChanged: (double value) {
+                    if (widget.onChanged != null) {
+                      widget.onChanged!(value);
+                    }
+                  },
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -104,11 +108,13 @@ class _TitleSliderState extends State<TitleSlider> {
                           setState(() {
                             widget.value--;
                             //updateProviderValue(widget.value.toDouble());
-                            updateProviderValue(
-                              provider: calcolapizzaProvider,
-                              value: widget.value.toDouble(),
-                              sliderType: widget.sliderType,
-                            );
+                            if (widget.sliderType != null) {
+                              updateProviderValue(
+                                provider: calcolapizzaProvider,
+                                value: widget.value.toDouble(),
+                                sliderType: widget.sliderType!,
+                              );
+                            }
                           });
                         }
                       },
@@ -120,11 +126,13 @@ class _TitleSliderState extends State<TitleSlider> {
                           setState(() {
                             widget.value++;
                             //updateProviderValue(widget.value.toDouble());
-                            updateProviderValue(
-                              provider: calcolapizzaProvider,
-                              value: widget.value.toDouble(),
-                              sliderType: widget.sliderType,
-                            );
+                            if (widget.sliderType != null) {
+                              updateProviderValue(
+                                provider: calcolapizzaProvider,
+                                value: widget.value.toDouble(),
+                                sliderType: widget.sliderType!,
+                              );
+                            }
                           });
                         }
                       },

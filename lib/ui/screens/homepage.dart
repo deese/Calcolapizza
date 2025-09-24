@@ -27,7 +27,7 @@ class Homepage extends StatelessWidget {
           body: Stack(
             children: <Widget>[
               Container(
-                color: Theme.of(context).bottomAppBarColor,
+                color: Theme.of(context).bottomAppBarTheme.color,
               ),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 16),

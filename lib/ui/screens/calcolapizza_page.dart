@@ -193,7 +193,7 @@ class CalcolapizzaPage extends StatelessWidget {
                         Consumer<CalcolapizzaProvider>(
                           builder: (_, calcolapizzaProvider, __) => Switch(
                             value: calcolapizzaProvider.isGrandmaPizza,
-                            activeColor: Theme.of(context).accentColor,
+                            activeColor: Theme.of(context).colorScheme.secondary,
                             onChanged: (bool value) {
                               calcolapizzaProvider.setIsGrandmaPizza = value;
                             },
@@ -206,9 +206,9 @@ class CalcolapizzaPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        Icon(
+                        FaIcon(
                           FontAwesomeIcons.infoCircle,
-                          color: Theme.of(context).accentColor,
+                          color: Theme.of(context).colorScheme.secondary,
                         ),
                         SizedBox(width: 10),
                         Flexible(
@@ -226,14 +226,14 @@ class CalcolapizzaPage extends StatelessWidget {
                   child: RoundedButton(
                     text: AppLocalizations.of(context)
                         .translate("calculateRecipe"),
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).colorScheme.secondary,
                     onPressed: () {
-                      if (_formKey.currentState.validate()) {
+                      if (_formKey.currentState?.validate() ?? false) {
                         Dough dough = Dough(
                           doughsNumber:
-                              num.parse(calcolapizzaProvider.doughNumber.text),
+                              int.parse(calcolapizzaProvider.doughNumber.text),
                           doughsWeight:
-                              num.parse(calcolapizzaProvider.doughWeight.text),
+                              int.parse(calcolapizzaProvider.doughWeight.text),
                           hydration: calcolapizzaProvider.selectedHydration,
                           saltPerLiter: calcolapizzaProvider.saltPerLiter,
                           fatsPerLiter: calcolapizzaProvider.fatsPerLiter,

@@ -22,13 +22,13 @@ class SideDrawer extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 25.0,
                   fontWeight: FontWeight.bold,
-                  color: Theme.of(context).accentColor,
+                  color: Theme.of(context).colorScheme.secondary,
                 ),
               ),
             ),
             Divider(),
             ListTile(
-              leading: Icon(
+              leading: const FaIcon(
                 FontAwesomeIcons.calculator,
               ),
               title: Text(
@@ -40,7 +40,7 @@ class SideDrawer extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: Icon(
+              leading: const FaIcon(
                 FontAwesomeIcons.pizzaSlice,
               ),
               title: Text(
@@ -52,7 +52,7 @@ class SideDrawer extends StatelessWidget {
             ),
             Divider(),
             ListTile(
-              leading: Icon(
+              leading: const FaIcon(
                 FontAwesomeIcons.cog,
               ),
               title:
@@ -67,7 +67,7 @@ class SideDrawer extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: Icon(
+              leading: const FaIcon(
                 FontAwesomeIcons.infoCircle,
               ),
               title: Text(AppLocalizations.of(context).translate("aboutTab")),

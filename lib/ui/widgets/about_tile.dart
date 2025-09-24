@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class AboutTile extends StatelessWidget {
-  final Icon icon;
+  final Widget icon;
   final String title;
   final Widget subtitle;
 
-  AboutTile({this.icon, this.title, this.subtitle});
+  AboutTile({required this.icon, required this.title, required this.subtitle});
 
   @override
   Widget build(BuildContext context) {

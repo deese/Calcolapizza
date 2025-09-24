@@ -4,7 +4,7 @@ class IngredientDosage extends StatelessWidget {
   final String title;
   final String data;
 
-  IngredientDosage({this.title, this.data});
+  IngredientDosage({required this.title, required this.data});
 
   @override
   Widget build(BuildContext context) {
